@@ -1,5 +1,6 @@
 /*
 * 작성일 : 2025-03-13
+* 작성자 : 박성진
 * 주  제 : 포인터에 대한 이해
 */
 
@@ -28,8 +29,8 @@
 * 컴퓨터 안에 메모리를 저장하는 영역. 메모리 주소로 저장을 하고 있었다.
 * 주소를 알고 있으면 언제 어디서나 값을 가져올 수 있다.
 * 
-* 언제?   변수를 만들어 두고 사용을 했어야 한다. 프로그램 실행 중에 메모리를 할당하고 사용하는 방법 - 동적 할당
-* 어디서? 함수에서 변경된 값은 외부에 적용이 안된다. Call by Reference
+* -언제?   변수를 만들어 두고 사용을 했어야 한다. 프로그램 실행 중에 메모리를 할당하고 사용하는 방법 - 동적 할당
+* -어디서? 함수에서 변경된 값은 외부에 적용이 안된다. Call by Reference
 * 
 */
 
@@ -43,7 +44,7 @@
 
 #include <stdio.h>
 
-	//Call by Value vs Call by Reference
+//Call by Value vs Call by Reference
 
 void CallValue(int number)
 {
@@ -61,11 +62,19 @@ void SwapPreview(int numA, int numB)
 	temp = numA;
 	numA = numB;
 	numB = temp;
+	 
+	printf("Swap을 하면 이런 결과가 나옵니다.\n");
+	printf("변경된 numA의 값 : %d\n", numA);
+	printf("변경된 numB의 값 : %d\n", numB);
 }
 
 // 외부에서 가져온 값은 변경하고 싶다. -> 주소의 값을 변경한다.
-void Swap(int numA, int numB)
+void Swap(int* numA, int* numB)
 {
+	int temp;
+	temp = *numA;
+	*numA = *numB;
+	*numB = temp;
 
 }
 
@@ -77,7 +86,7 @@ int main()
 	int number = 10;
 	printf("정수 출력 : %d\n", number);
 	// 포인터를 출력
-	printf("포인터 출력 : %p\n", &number);
+	printf("포인터 출력 : %p\n\n", &number);
 
 	// 실습 2. 포인터 사용
 	// * , &
@@ -85,8 +94,8 @@ int main()
 	int* pointerNumber;    // 포인터 변수의 선언
 	int num1 = 10;         // 변수의 선언 - 주소가 같이 저장
 	pointerNumber = &num1; // 포인터 변수에 변수의 주소값을 대입
-	printf("포인터 출력 : %p\n", pointerNumber);
-	printf("정수 출력 : %d\n", *pointerNumber);
+	printf("포인터 출력 : %p\n", pointerNumber); // 주소를 가지고와라(포인트넘버 자체가 주소라서 &는 붙이지 않는다)
+	printf("정수 출력 : %d\n\n", *pointerNumber);  // 주소의 값을 가지고 오라 ( * )
 
 	// 연습문제. 포인터 실습
 
@@ -98,12 +107,22 @@ int main()
 	// 주소값 출력
 	// 0.1값을 가져오기;
 	printf("주소값을 출력한다 : %p\n", &floatNum);
-	printf("주소로 부터 값을 출력하기 : %f\n", *floatPointer);
+	printf("주소로 부터 값을 출력하기 : %f\n\n", *floatPointer);
 
-	//int num2 = 5;
-	//int* num2ptr = &num2;
+	int num2 = 5;
+	int* num2ptr = &num2;
+	
+	long long longNum = 100;
+	long long* longNumptr = &longNum;
+	printf("long long 예시\n");
+	printf("주소로 부터 값을 출력한다 :%d\n\n", *longNumptr);
 
-	//
+	char charNum = 'A';
+	char* charNumptr = &charNum;
+	printf("주소값을 출력한다 : %p\n", &charNum);
+	printf("주소로 부터 값을 출력하기 : %c\n\n", *charNumptr);
+	
+	// Call by value , Call by Reference
 	printf("Call by Value vs Call by Reference 예시\n");
 	int exampleNumber = 10;
 	int* exampleNumberPtr = &exampleNumber;
@@ -111,6 +130,18 @@ int main()
 	CallValue(exampleNumber);
 	printf("CallValue 실행 후 exampleNumber의 값 : %d\n", exampleNumber);
 	CallReference(exampleNumberPtr);
-	printf("CallValue 실행 후 exampleNumber의 값 : %d\n", exampleNumber);
+	printf("CallValue 실행 후 exampleNumber의 값 : %d\n\n", exampleNumber);
 
+	int numA = 50;
+	int numB = 60;
+
+	SwapPreview(numA, numB);
+
+	printf("현제 numA, numB의 값\n");
+	printf("numA : %d, numB : %d\n", numA, numB);
+
+	Swap(&numA, &numB);
+	printf("Swap실행 후\n");
+	printf("현제 numA, numB의 값\n");
+	printf("numA : %d, numB : %d\n", numA, numB);
 }
