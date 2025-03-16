@@ -11,4 +11,4 @@ void IncreaseScore(int* score, int points); //
 
 void UpgradeWeapon(int* weaponLv, int baseAP, float* weight);
 
-//void mySwap(int x, int y);
+//void mySwap(int* x, int* y);

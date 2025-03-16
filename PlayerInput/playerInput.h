@@ -2,4 +2,4 @@
 #include <conio.h> //_getch()
 #include <Windows.h> // _kbhit(), GetAsyncKeyState
 
-void GetInput(int*);
+void GetInput(int* playerX, int* playerY);

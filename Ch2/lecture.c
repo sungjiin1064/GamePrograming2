@@ -48,7 +48,7 @@ void ShowLecture()
 	int x = 5;
 	int y = 20;
 
-	//mySwap(x, y);
+	//mySwap(&x, &y);
 	//printf("mySwap x의 값 :%d, y의 값 :%d\n", x, y);
 }
 
@@ -71,19 +71,15 @@ void UpgradeWeapon(int* weaponLv, int baseAP, float* weight)
 	{
 		*weight = *weight * 1.5f;
 	}
-	printf("현제 무기 공격력 : %f\n", (*weaponLv) * (*weight) * baseAP);
+	printf("현제 무기 공격력 : %f\n", (*weaponLv) * (*weight) + baseAP);
 }
 
 
-/*void mySwap(int x, int y)
+/*void mySwap(int* x, int* y)
 {
-	int temp = x;
-	x = y;
-	y = temp;
+	int temp = *x;
+	*x = *y;
+	*y = temp;
 	
 }*/
 
-void IncreaseTemp(int score, int points)
-{
-
-}

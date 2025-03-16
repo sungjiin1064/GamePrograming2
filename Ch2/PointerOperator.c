@@ -40,7 +40,7 @@ void PointerExample()
 
 	// Call by value , Call by Reference 구분해서 사용해야 할 이유
 
-	printf("number1ptr의 값을 출력 :%d\n", (*number1ptr) + 1);
+	printf("number1ptr의 값을 출력 :%d\n\n", (*number1ptr) + 1);
 
 	// 주소를 더해보자
 
