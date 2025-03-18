@@ -12,7 +12,7 @@ int main()
 	{
 		if (_kbhit)
 		{
-			if (GetAsyncKeyState(VK_LEFT));
+			if (GetAsyncKeyState(VK_LEFT) & 0x8000);
 		}
 	}
 }
