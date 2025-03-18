@@ -94,6 +94,7 @@ int main()
 	printf("%c\n", scoreName2[4]);
 	printf("%c\n", scoreName2[5]);
 	printf("%c\n", scoreName2[6]);
+	printf("%s\n", scoreName2);
 	
 
 	// "국어" - 문자열        메모리주소 |국    |어    |
@@ -122,4 +123,18 @@ int main()
 	char* itemNamePtr = "이름2";
 
 	printf("%s, %s", itemName, itemNamePtr);
+
+	Student students[10] = 
+	{
+	  {"Madonna", 50, 5.5},
+	  {"Alice", 20, 4.3},
+	  {"Bob", 22, 3.8},
+	  {"Charlie", 25, 4.0},
+	  {"Diana", 23, 4.1},
+	  {"Eve", 21, 3.9},
+	  {"Frank", 24, 4.5},
+	  {"Grace", 19, 4.7},
+	  {"Hannah", 22, 4.2},
+	  {"Ian", 26, 3.5}
+	};
 }
