@@ -25,3 +25,5 @@ void InputPlayerKey(Player* playerPtr);
 void GotoXY(int x, int y);
 
 void SHowPlayInfo(const Player* playPtr);
+
+void Monster();

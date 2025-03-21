@@ -36,10 +36,12 @@ void InputPlayerKey(Player* playerPtr)
 		if (GetAsyncKeyState(VK_LEFT))
 		{
 			playerPtr->playerPos.posX -= 2;
+		
 		}
 		else if (GetAsyncKeyState(VK_RIGHT))
 		{
 			playerPtr->playerPos.posX += 2;
+		
 		}
 		else if (GetAsyncKeyState(VK_UP))
 		{
@@ -70,12 +72,9 @@ void SHowPlayInfo(const Player* playerPtr)
 	GotoXY(50, 4);
 	printf("플레이어의 위치 : (%d, %d)", playerPtr->playerPos.posX, playerPtr->playerPos.posY);
 
-	GotoXY(playerPtr->playerPos.posX, playerPtr->playerPos.posY-1);
+	GotoXY(playerPtr->playerPos.posX, playerPtr->playerPos.posY);
 	printf("      ★");
-	GotoXY(playerPtr->playerPos.posX+1, playerPtr->playerPos.posY);
+	GotoXY(playerPtr->playerPos.posX + 1, playerPtr->playerPos.posY + 1);
 	printf("(^o^)/");
-	GotoXY(playerPtr->playerPos.posX+1, playerPtr->playerPos.posY+1);
-	printf(" | |");
-
-
+	
 }

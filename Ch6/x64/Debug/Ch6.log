@@ -1,2 +1,7 @@
 ﻿  GameUi.c
-  Ch6.vcxproj -> C:\Users\Administrator\Desktop\GamePrograming2\Pointer\x64\Debug\Ch6.exe
+  main.c
+C:\Users\user\Desktop\GamePrograming2\Ch6\GameUi.c(11,6): error C2082: 'GameStart' 정식 매개 변수 재정의
+C:\Users\user\Desktop\GamePrograming2\Ch6\GameUi.c(12,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Users\user\Desktop\GamePrograming2\Ch6\main.c(34,5): error C2085: 'main': 정식 매개 변수 목록에 없습니다.
+C:\Users\user\Desktop\GamePrograming2\Ch6\main.c(35,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+  코드를 생성하고 있습니다...
