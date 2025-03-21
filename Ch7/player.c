@@ -84,7 +84,7 @@ BOOL ComPareCOORD(COORD pos1, COORD pos2)
 
 	if (pos1.X == pos2.X && pos1.Y == pos2.Y)
 	{
-		return 1;
+		return 0;
 
 	}
 	else
