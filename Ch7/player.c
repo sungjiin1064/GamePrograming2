@@ -27,6 +27,7 @@ void GetPlayerInput(Player* playerPtr)
 
 void ShowPlayer(const Player* playerPtr)
 {
+	//x,y좌표로 이동해서 printf한다.
 	//GoXY(playerPtr->pos.X, playerPtr->pos.Y);
 	GoXYCOORD(playerPtr->pos);
 	printf("★");
@@ -34,6 +35,7 @@ void ShowPlayer(const Player* playerPtr)
 
 void InteractWithItem(Player* playerPtr, Item* itemPtr)
 {
+    // player,Item 좌표 각각의 x,y비교해서 두 좌표가 Item안에 있는 HasItem True변경해주는 코드를 작성
 	if (ComPareCOORD(playerPtr->pos, itemPtr->pos));
 	{
 		itemPtr->hasItem = true;
@@ -43,7 +45,7 @@ void InteractWithItem(Player* playerPtr, Item* itemPtr)
 
 void ShowPlayerItemUnfo(Item* itemPtr)
 {
-
+	// 모든 아이템은 탐색해서 HasItemTrue인 녀석들만 정보를 보여줘
 	if (itemPtr->hasItem)
 	{
 		printf("%s 아이템을 획득했습니다.\n", );
@@ -84,12 +86,12 @@ BOOL ComPareCOORD(COORD pos1, COORD pos2)
 
 	if (pos1.X == pos2.X && pos1.Y == pos2.Y)
 	{
-		return 0;
+		return true;
 
 	}
 	else
 	{
-		return 0;
+		return false;
 	}
 
 }

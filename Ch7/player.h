@@ -20,7 +20,6 @@ typedef struct
 }Item;
 
 void GetPlayerInput(Player* playerPtr);
-
 void ShowPlayer(const Player* playerPtr);
 
 void InteractWithItem(Player* playerPtr, Item* itemPtr);

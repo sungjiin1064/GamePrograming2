@@ -7,7 +7,7 @@
 * 포인터 - 주소를 이용할 수 있게되었다. 
 * 1. 포인터 변수 선언하는 법           int* numptr;
 * 2. 변수로 부터 주소를 호출하는 법     int num; &num;
-* 3. 주소에서 값은 참조하는 법         **numptr;
+* 3. 주소에서 값은 참조하는 법         *numptr;
 */
 
 /*
@@ -36,6 +36,7 @@
 
 int main()
 {
+	// 플레이어의 기본 데이터를 설정
 	COORD playerPos = { 0,0 };
 	Player player = { "모험가", playerPos };
 
