@@ -24,7 +24,7 @@ void ShowPlayer(const Player* playerPtr);
 
 void InteractWithItem(Player* playerPtr, Item* itemPtr);
 void ShowPlayerItemUnfo(Item* itemPtr);
-void ShowPlayerAllItemInfo(Item itemArray[], int length);
+void ShowPlayerAllItemInfo(Item itemArray, int length);
 
 void ShowAllItem(Item itemArray[], int length);
 

@@ -56,9 +56,9 @@ int main()
 		GetPlayerInput(&player);
 		ShowPlayer(&player);
 
-		InteractWithItem(&player, &itemA);
-		ShowPlayerItemUnfo(&itemA);
-		//ShowPlayerItemUnfo(&itemB);
+		InteractWithItem(&player, GameItems[0]);
+		//ShowPlayerItemUnfo(&itemA);
+		ShowPlayerAllItemInfo(GameItems);
 
 		Sleep(100);
 	}
