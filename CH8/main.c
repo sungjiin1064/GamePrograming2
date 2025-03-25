@@ -1,10 +1,11 @@
 /*
 * 작성일 : 2025-03-24
-* 주  제 :
+* 주  제 : 문자열의 응용
 */
 
 /*
-*
+* 문자열 : 배열로 이루어진 문자
+* string : char(acter) array
 */
 
 #include "MyString.h"
