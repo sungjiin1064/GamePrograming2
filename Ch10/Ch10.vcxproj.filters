@@ -21,10 +21,13 @@
     <ClCompile Include="ConsoleGame.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Stage.c">
+    <ClCompile Include="MyGame.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="MyGame.c">
+    <ClCompile Include="Player.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage2.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -32,10 +35,13 @@
     <ClInclude Include="ConsoleGame.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Stage.h">
+    <ClInclude Include="MyGame.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="MyGame.h">
+    <ClInclude Include="Player.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage2.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

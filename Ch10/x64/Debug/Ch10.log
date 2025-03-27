@@ -1,5 +1,4 @@
-﻿  ConsoleGame.c
-  main.c
-C:\Users\Administrator\Desktop\GamePrograming2\Ch10\Stage.h(17,2): error C2371: 'WAWWW': 재정의. 기본 형식이 다릅니다.
-  Stage.c
+﻿  main.c
+C:\Users\Administrator\Desktop\GamePrograming2\Ch10\main.c(58,2): error C2143: 구문 오류: ';'이(가) 'if' 앞에 없습니다.
+  Player.c
   코드를 생성하고 있습니다...
