@@ -57,9 +57,9 @@ int main()
 
 	if (CanMoveStage(Stage1, tempPos, '@')) 
 	{
-		system("cls");                     // 전체 화면을 지운다
+		//system("cls");                     // 전체 화면을 지운다
 		ShowStage(Stage2, stagePos2);      // 선택한 스테이지를 출력한다
-		GoToXY(8 + 40, 10);               // 커서 위치를 이동한다
+		GoToXY(10 + 50, 10);               // 커서 위치를 이동한다
 		printf("♥");                       // 플레이어 문자를 출력한다.
 	}
 
@@ -67,5 +67,6 @@ int main()
 	while(true)
 	{
 
-	}
+	}  
+
 }
