@@ -1,7 +1,17 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\GamePrograming2\\Pointer\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BCAAA499-AB0F-4EB7-8B24-EBEA8C0C0602}|..\\Ch11\\Ch11.vcxproj|C:\\Users\\user\\Desktop\\GamePrograming2\\Ch11\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCAAA499-AB0F-4EB7-8B24-EBEA8C0C0602}|..\\Ch11\\Ch11.vcxproj|C:\\Users\\user\\Desktop\\GamePrograming2\\Ch11\\FileHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCAAA499-AB0F-4EB7-8B24-EBEA8C0C0602}|..\\Ch11\\Ch11.vcxproj|C:\\Users\\user\\Desktop\\GamePrograming2\\Ch11\\FileHandler.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +19,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileHandler.h",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\GamePrograming2\\Ch11\\FileHandler.h",
+              "RelativeDocumentMoniker": "..\\Ch11\\FileHandler.h",
+              "ToolTip": "C:\\Users\\user\\Desktop\\GamePrograming2\\Ch11\\FileHandler.h",
+              "RelativeToolTip": "..\\Ch11\\FileHandler.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-01T11:09:12.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FileHandler.c",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\GamePrograming2\\Ch11\\FileHandler.c",
+              "RelativeDocumentMoniker": "..\\Ch11\\FileHandler.c",
+              "ToolTip": "C:\\Users\\user\\Desktop\\GamePrograming2\\Ch11\\FileHandler.c",
+              "RelativeToolTip": "..\\Ch11\\FileHandler.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-04-01T11:09:09.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.c",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\GamePrograming2\\Ch11\\main.c",
+              "RelativeDocumentMoniker": "..\\Ch11\\main.c",
+              "ToolTip": "C:\\Users\\user\\Desktop\\GamePrograming2\\Ch11\\main.c",
+              "RelativeToolTip": "..\\Ch11\\main.c",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAAGsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-04-01T11:09:06.547Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
