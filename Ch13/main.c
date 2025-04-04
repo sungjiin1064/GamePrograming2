@@ -95,7 +95,7 @@ void ShopPhase(Item shop[], Item inventory[], int count, int* inventoryCount ,bo
 		case 3: return;		
 		case 4: *gameQuit = true; return;
 		}
-
+		
 	}
 }
 
